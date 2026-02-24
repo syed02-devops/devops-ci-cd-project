@@ -25,3 +25,13 @@ jobs:
           context: .
           push: true
           tags: dockerdev021998/devops-app:latest
+            
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 54.165.107.27
+          username: ec2-user
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ec2-user
+            ./deploy.sh
