@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: dockerDev021998/devops-app:latest
+          tags: dockerdev021998/devops-app:latest
