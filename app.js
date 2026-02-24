@@ -1,7 +1,7 @@
 const http = require("http");
 
 http.createServer((req, res) => {
-  res.write("DevOps CI/CD is Working. Alhamdulillah");
+  res.write("Shukran Allah for helping us learn. Alhamdulillah");
   res.end();
 }).listen(3000);
 
