@@ -1,7 +1,7 @@
 const http = require("http");
 
 http.createServer((req, res) => {
-  res.write("Shukran Allah for helping us learn. Alhamdulillah");
+  res.write("Kubernetes Rolling Update 🚀🔥");
   res.end();
 }).listen(3000);
 
